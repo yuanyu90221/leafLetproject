@@ -12,7 +12,7 @@ function initMap(){
   
     // 設定圖資來源
     let osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    let osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 20});
+    let osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 16});
     let dangerCircle = L.circle([25.063274,121.500762],1000,{color:'red',fillColor:"#f03", fillOpacity: 0.5}).addTo(map).bindPopup('這是危險區');
 
     let taipeiBridge = L.marker([25.063274,121.500762]).addTo(map).bindPopup('台北橋捷運站').openPopup();
